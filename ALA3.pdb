@@ -1,0 +1,60 @@
+REMARK DYNAMO 7.2 Rev 2013.047.09.17
+REMARK 
+REMARK DATA DYNAMO_REPORT Step: 13081 Level: 161 Stage: Cooling
+REMARK DATA DYNAMO_REPORT             bond           0.027      0.001
+REMARK DATA DYNAMO_REPORT             dist           0.000      0.000
+REMARK DATA DYNAMO_REPORT            angle           1.453      0.409
+REMARK DATA DYNAMO_REPORT           uangle           0.000      0.000
+REMARK DATA DYNAMO_REPORT         improper           0.071      0.240
+REMARK DATA DYNAMO_REPORT         torsions           0.000      0.000
+REMARK DATA DYNAMO_REPORT       J coupling           0.000      0.000
+REMARK DATA DYNAMO_REPORT dipolar coupling           0.000      0.000
+REMARK DATA DYNAMO_REPORT              pcs           0.000      0.000
+REMARK DATA DYNAMO_REPORT             NOEs           0.000      0.000
+REMARK DATA DYNAMO_REPORT           H-Bond           0.000      0.000
+REMARK DATA DYNAMO_REPORT          rad gyr           0.000      0.000
+REMARK DATA DYNAMO_REPORT     distance sym           0.000      0.000
+REMARK DATA DYNAMO_REPORT       atom coord           0.000      0.000
+REMARK DATA DYNAMO_REPORT              vdw           0.003      0.005
+REMARK DATA DYNAMO_REPORT neighbor updates             242
+REMARK DATA DYNAMO_REPORT               PE           1.554
+REMARK DATA DYNAMO_REPORT               KE           0.067
+REMARK DATA DYNAMO_REPORT      temperature           0.679
+REMARK DATA DYNAMO_REPORT         gradient           0.911
+REMARK DATA DYNAMO_REPORT             tDev           0.000
+REMARK DATA DYNAMO_REPORT 
+
+ATOM      1  C   ALA     1       7.967   8.055   0.327  1.00  0.00              
+ATOM      2  CA  ALA     1       8.581   7.566   1.633  1.00  0.00              
+ATOM      3  CB  ALA     1       7.708   6.478   2.245  1.00  0.00              
+ATOM      4  HA  ALA     1       9.566   7.149   1.425  1.00  0.00              
+ATOM      5  HB1 ALA     1       7.685   5.614   1.582  1.00  0.00              
+ATOM      6  HB2 ALA     1       6.696   6.857   2.382  1.00  0.00              
+ATOM      7  HB3 ALA     1       8.118   6.183   3.210  1.00  0.00              
+ATOM      8  N   ALA     1       8.724   8.672   2.574  1.00  0.00              
+ATOM      9  O   ALA     1       8.382   7.643  -0.757  1.00  0.00              
+ATOM     10  HT1 ALA     1       9.072   9.510   2.070  1.00  0.00              
+ATOM     11  HT2 ALA     1       9.400   8.408   3.318  1.00  0.00              
+ATOM     12  HT3 ALA     1       7.802   8.886   3.002  1.00  0.00              
+ATOM     13  C   ALA     2       7.278  10.291  -1.585  1.00  0.00              
+ATOM     14  CA  ALA     2       6.306   9.472  -0.740  1.00  0.00              
+ATOM     15  CB  ALA     2       5.130  10.337  -0.315  1.00  0.00              
+ATOM     16  HA  ALA     2       5.932   8.644  -1.341  1.00  0.00              
+ATOM     17  HB1 ALA     2       4.719  10.843  -1.188  1.00  0.00              
+ATOM     18  HB2 ALA     2       5.467  11.076   0.411  1.00  0.00              
+ATOM     19  HB3 ALA     2       4.360   9.711   0.135  1.00  0.00              
+ATOM     20  HN  ALA     2       6.673   9.233   1.368  1.00  0.00              
+ATOM     21  N   ALA     2       6.974   8.933   0.439  1.00  0.00              
+ATOM     22  O   ALA     2       7.265  10.215  -2.814  1.00  0.00              
+ATOM     23  C   ALA     3      10.088  11.035  -2.378  1.00  0.00              
+ATOM     24  CA  ALA     3       9.089  11.908  -1.624  1.00  0.00              
+ATOM     25  CB  ALA     3       9.822  12.795  -0.629  1.00  0.00              
+ATOM     26  HA  ALA     3       8.563  12.540  -2.339  1.00  0.00              
+ATOM     27  HB1 ALA     3      10.502  13.456  -1.164  1.00  0.00              
+ATOM     28  HB2 ALA     3      10.390  12.173   0.063  1.00  0.00              
+ATOM     29  HB3 ALA     3       9.099  13.391  -0.073  1.00  0.00              
+ATOM     30  HN  ALA     3       8.081  11.101   0.097  1.00  0.00              
+ATOM     31  N   ALA     3       8.117  11.077  -0.920  1.00  0.00              
+ATOM     32  OT1 ALA     3      11.237  10.998  -1.973  1.00  0.00              
+ATOM     33  OT2 ALA     3       9.682  10.403  -3.340  1.00  0.00              
+END
