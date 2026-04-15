@@ -1,0 +1,60 @@
+title                    = co2 MD
+;cpp                      = /lib/cpp
+;include                  = /usr/share/gromacs/top
+define                   = -DPOSRES   ; ICE restrain the polyethylene 
+
+;Run parameters
+integrator               = md   ; leap-frog integrator
+dt                       = 0.002   ;  2fs
+nsteps                   = 2500000   ;  0.002*250000=500ps, 0.5ns
+
+;Output control
+nstxout                  = 25000    ; save coordinates every 10ps
+nstvout                  = 25000      ;      velocities
+nstlog                   = 25000       ;      log
+nstenergy                = 25000       ;      energies
+nstxtcout                = 25000       ;   xtc compressed trj output
+xtc_grps                 = GRP Protein NA CL SOL   
+energygrps               = GRP Protein NA CL SOL 
+
+; Neighborsearching
+cutoff-scheme            = Verlet
+nstlist                  = 10     ; 20fs
+ns-type                  = grid    ; search neighboring grid cels
+rlist                    = 1.0     ; short-range neighborlist cutoff (in nm)
+
+;Electrostatics
+coulombtype              = PME  ; Particle Mesh Ewald for long-range eletro
+pme_order                = 4    ; cubic interpolation
+fourierspacing           = 0.16  ; grid spacing for FFT
+rcoulomb                 = 1.0   ; short-range for electrostatic cutoff
+rvdw                     = 1.0   ;                van der Waals
+
+; Temperature coupling is on
+tcoupl                   = V-rescale   ; modified Beredsen thermostat
+tc-grps                  = GRP Protein NA CL SOL  ;2 coupling group
+tau-t                    = 0.1 0.1 0.1 0.1 0.1    ; time constant ,in ps
+ref-t                    = 298 298 298 298 298  ; reference T
+
+; Pressure coupling is on
+Pcoupl                   = Berendsen    ; Pressure coupling 
+tau-p                    = 2.0         ; time constant
+compressibility          = 4.5e-5     ; isothermal compressibility of water
+ref-p                    = 1.0            ; reference pressure, in bar
+refcoord_scaling         = all
+
+gen-vel                  = yes            ; generate v ,yes for the first md, no for 2st, 3rd....
+gen-temp                 = 298
+gen-seed                 = 178963  
+
+;Bonds
+constraints              = all-bonds
+constraint-algorithm     = LINCS
+lincs_iter               = 1    ; accuracy of LINCS
+lincs_order              = 4    ; also related to accuracy
+  
+; Periodic boundary conditions
+pbc                      = xyz    ; 3-D PBC
+
+; Dispersion correction
+DispCorr   = EnerPres     ; account for cut-off vdW scheme
